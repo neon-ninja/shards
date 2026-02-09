@@ -6,7 +6,7 @@
     <title>Redirecting...</title>
     <script>
         // Preserve the pathname, query parameters, and hash fragment when redirecting
-        var path = window.location.pathname.replace(/^\/shards\/?/, '/');
+        const path = window.location.pathname.replace(/^\/shards\/?/, '/');
         window.location.replace('https://ingress-shards.github.io' + path + window.location.search + window.location.hash);
     </script>
 </head>
